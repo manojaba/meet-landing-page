@@ -95,6 +95,12 @@ body {
 
 }
 
+@media (min-width:1024px) {
+    .header {
+        padding-top: 8.4rem;
+    }
+}
+
 
 
 
@@ -121,12 +127,18 @@ body {
 .img-container {
     width: 50%;
     box-sizing: border-box;
+
 }
 
 
 .img-container img {
     width: 100%;
+
+
+
 }
+
+
 
 .hero-content {
 
@@ -229,16 +241,25 @@ body {
         grid-template-columns: auto minmax(500px, auto) auto;
         justify-items: center;
         align-items: center;
+        gap: 12.7rem;
     }
 
     .hero-content {
         grid-column-start: 2;
         grid-column-end: 3;
         grid-row-start: -1;
+        max-width: 44.8rem;
+        margin-left: 3.2rem;
+        margin-right: 3.2rem;
 
+    }
 
+    .hero-content h1 {
+        font-size: 6.4rem;
+    }
 
-
+    .hero-content p {
+        font-size: 1.8rem;
     }
 
     .img-container {
@@ -301,7 +322,7 @@ body {
 
 .main .description {
     margin-top: 6.4rem;
-    margin-bottom: 6.4rem;
+    margin-bottom: 7.2rem;
     margin-left: auto;
     margin-right: auto;
 
@@ -309,6 +330,7 @@ body {
 
 .description h4 {
     color: var(--cyan-600);
+    font-family: redhat;
     font-size: 1.2rem;
     line-height: 110%;
     font-weight: 900;
@@ -343,12 +365,32 @@ body {
         margin-top: 11rem;
 
 
+
     }
 
     .main .images {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 2.4rem;
+    }
+
+    .main .description {
+        max-width: 504px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+    }
+
+    .main .description h2 {
+        font-size: 3.6rem;
+        max-width: 44.5rem;
+        text-align: center;
+    }
+
+    .main .description p {
+        font-size: 1.6rem;
     }
 }
 
@@ -359,6 +401,40 @@ body {
         margin-left: auto;
         margin-right: auto;
     }
+
+    .main .description {
+        max-width: 544px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main .description h4 {
+        font-family: redhat;
+        font-weight: 900;
+        line-height: 110%;
+        font-size: 1.6rem;
+        letter-spacing: 4px;
+
+    }
+
+    .main .description h2 {
+        max-width: 15ch;
+        text-align: center;
+        font-size: 4rem;
+        line-height: 110%;
+        font-weight: 900;
+    }
+
+    .main .description p {
+        font-family: redhat;
+        font-size: 1.8rem;
+        font-weight: 500;
+        line-height: 150%;
+
+    }
+
+
 }
 
 /*footer*/
@@ -444,4 +520,56 @@ body {
 .color .purple-button {
     position: relative;
     z-index: 10;
+    left: 50%;
+    transform: translate(-50%);
+    width: 193px;
+    height: 56px;
+}
+
+
+@media (min-width:768px) {
+    .footer-content h2 {
+        font-size: 3.6rem;
+    }
+
+
+    .footer-content p {
+        max-width: 500px;
+        font-size: 1.6rem;
+    }
+}
+
+@media (min-width:1024px) {
+
+    .footer-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 9.5rem;
+        margin: 0 auto;
+        position: relative;
+        z-index: 10;
+
+    }
+
+    .footer-content h2 {
+        text-align: left;
+        max-width: 20ch;
+        font-size: 4rem;
+        line-height: 110%;
+    }
+
+    .footer-content .para {
+        text-align: left;
+        max-width: 30ch;
+        font-size: 1.8rem;
+        line-height: 150%;
+    }
+
+    .color {
+        padding: 11.2rem 16rem;
+    }
+
+
+
 }
