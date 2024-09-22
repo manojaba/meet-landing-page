@@ -241,7 +241,7 @@ body {
         grid-template-columns: auto minmax(500px, auto) auto;
         justify-items: center;
         align-items: center;
-        gap: 12.7rem;
+        gap: 6rem;
     }
 
     .hero-content {
